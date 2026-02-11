@@ -38,8 +38,7 @@ jobs:
 
       - name: Run revive
         uses: morphy2k/revive-action@v2.6.0
-        with:
-          config: revive.toml    # ← remove this line if you don't have revive.toml
+        # no 'with' block needed if you don't set config or exclude
 
       - name: Run staticcheck
         uses: dominikh/staticcheck-action@v1.4.0   # ← this is the latest real version
